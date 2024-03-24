@@ -1,7 +1,7 @@
 import re
 
+names = "alex, john, jane, jack, jenny"
 
 
-text = "barbar harhar carhel"
-
-print(re.findall(r'(\w{3})(\1)', text))
+for name in names.split(","):
+    print(name.strip())
